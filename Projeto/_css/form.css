@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+div {
+	text-align: center;
+}
+
+section#quadro {
+	
+	width: 50%;
+	height: 50%;
+	
+	margin: auto;
+	transition: 0.5s;
+}
+
+aside#relatorio { 
+	width: auto;
+	height: auto;
+	display: block;
+	float: right;
+	border: 1px solid black;
+	padding: 10px;
+	opacity: 0;
+	margin-right: 100px;
+	box-shadow: 1px 1px 1px black;
+	transition: 0.6s;
+}
+
+li {
+	margin-top: 10px;
+	list-style-type: '';
+}
+
+form {
+	display: inline-block;
+	border: 2px solid black;
+	width: auto;
+	padding: 20px; 
+}
+
+form input.botao{
+	margin-bottom: 20px;
+}
+
+form input, form select {
+	margin-top: 10px;
+}
+
+fieldset legend {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+table {
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+	box-shadow: 1px 1px 1px black;
+}
+
+table td.gen {
+	padding: 20px;
+	width: 20px;
+	font-size: 18pt;
+	border: 1px solid black;
+	background-color: rgba(100,0,0,0.5);
+}
+
+table td.geno {
+	font-size: 18pt;
+	border: 1px solid black;
+	background-color: rgb(0,120,0);
+}
+
+table td.genm {
+	height: 20px;
+	width: 20px;
+	font-size: 14pt;
+	border: 1px solid black;
+	background-color: rgba(0,120,0,0.5);
+	transition: 0.4s;
+    user-select: none; 
+}
+
+input.numg {
+	display: none;
+}
+
+.foco {
+	color: yellow;
+	opacity: 0.8;
+}
+
+.focod {
+	color: rgba(222,0,0,0.5);
+}
+
+.focor {
+	color: rgba(0,0,222,0.5);
+}
+
+.fococd {
+	background-color: rgba(222,0,0,0.9);
+	border: 1px solid black;
+	margin-left: -5px;
+}
+
+.fococr {
+   background-color: rgba(0,0,222,0.9);
+   border: 1px solid black;
+   margin-left: -12px;
+}
+
+.fococ {
+   background-color: yellow;
+   border: 1px solid black;
+   margin-left: -11px;
+}
+
+.botao {
+	background-color: rgb(10,150,50);
+	height: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 35px;
+	box-shadow: 1px 1px 2px black;
+}

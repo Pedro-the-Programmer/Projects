@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Algoritmo é Legal!</title> 
+		<link rel="stylesheet" type="text/css" href="_css/estilos.css"/>
+		<meta name="Description" CONTENT="Página para ajudar os colegas de sala com algoritmos, e programação em geral"/>
+		<meta name="KeyWords" CONTENT="algoritmo, poo, html, javascript, web, desenvolvimento"/>
+		<script type="text/javascript" src="_javascript/funcoes.js"></script>
+	</head>
+	<body>
+	<div id="interface">  
+	
+	  <header id="cabecalho">
+	  
+		<nav id="menu">
+			<h1>Menu</h1>
+			<ul type="disc">
+				<li onclick="redirec('index.html')">Home</li>
+				<li onclick="redirec('poo.html')">POO</li>
+				<li onclick="redirec('contato.html')">Contato</li>
+			</ul>
+		</nav>
+		
+		<figure class="video-painel">
+	   
+			<h6 class="video-painel-link" onclick="redirec('playlist.html')">Acessar playlist do curso completa</h6>
+		
+			<iframe width="430" height="315" src="https://www.youtube.com/embed/8mei6uVttho" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="right"></iframe>
+		
+		</figure>
+	   
+		<hgroup>
+			<h1 class="saudacao">Olá!</h1>
+			<h2>Vamos estudar Algoritmo?</h2>
+		</hgroup>
+	  
+	  </header>	
+	  
+	  <section id="principal">
+		<article id="infoprincipal">
+			<h3>Programa para somar dois números em pascal</h3><br/>
+	  
+			<pre>
+			<code>
+				Program Pzim;
+				var
+				  a,b,soma: Integer;
+				begin
+				  writeln('Olá, insira dois números para efetuar uma soma.');
+				  writeln;
+				  readln(a,b);
+				  soma := a + b;
+				  writeln;
+				  writeln('Soma é igual a ', soma);
+				end;
+			</code>
+			</pre><br/>
+	  
+			<h3>Aprender <i>algoritmo</i> é essencial para você que faz curso de informática.</h3><br/>
+	  
+			<nav id="material">
+			<ul type="disc">
+				<li onclick="abrirpag('https://drive.google.com/open?id=12vOsXHOD4tfgd-qO0fq1udvQ-k9yTX-2')">Acessar Estruturas Condicionais</li>
+	  
+				<li onclick="abrirpag('https://drive.google.com/file/d/1hpvjVQTSPu5ZzoCl6BMKdQtlD7s0OX0C/view?usp=sharing')">Acessar Estruturas de Repetição</li>
+	  
+				<li onclick="abrirpag('https://drive.google.com/file/d/1ht8DYLBFZ1QbATDMibY_fPYeeO1Ay6db/view?usp=sharing')">Acessar Vetores e Sub-Rotinas</li>
+			</ul>
+			</nav><br/>
+	  
+			<p>Se quiser que eu uti&shy;lize este meio para ensinar al&shy;go&shy;ritmo, eu posso tentar criar sites ilus&shy;trando os assun&shy;tos de es&shy;tru&shy;tu&shy;ras con&shy;di&shy;ci&shy;o&shy;nais, re&shy;pe&shy;ti&shy;ção, ve&shy;to&shy;res, e mais.</p><br/><br/>
+			
+		</article>
+		
+		<article id="extra">
+		
+			<table id="contexterno" onmouseout="altImg('imagemPag', 'algoritmo')">
+				<caption>Conteúdos Extras</caption>
+				<tr><td onclick="redirec('operacoes.html')" onmousemove="altImg('imagemPag', 'math')">Operações Aritméticas Básicas</td><tr>
+				<tr><td onclick="redirec('geradores.html')" onmousemove="altImg('imagemPag', 'generator')">Geradores</td></tr>
+				<tr><td onclick="redirec('game.html')" onmousemove="altImg('imagemPag', 'game')">Jogar Castlevania: The Christopher's Arrival</td></tr>
+			</table>
+		
+			<figure class="foto-painel">
+				<img id="imagemPag" src="_imagens/algoritmo.jpg"/>
+				<figcaption>
+					<h3>Algoritmo &hearts;</h3>
+					<p>Estude algoritmo ein</p>
+				</figcaption>
+			</figure><br/> 
+
+		</article>
+	  </section>
+	  
+	  <footer id="rodape">
+		<h4>Copyright &copy; Pedro Fernandes 2020</h4>  
+		<h5>&Delta;&nbsp;&equals;&nbsp;b<sup>2</sup>-&nbsp;4&times;a&times;c</h5>
+		<h5><span style="text-decoration: underline;">-b&plusmn;&radic;&Delta;</span></h5>
+		<h5><span style="position: relative; bottom: 25px;">2&times;a</span></h5>
+	  </footer>
+	  
+	</div>
+	</body>
+</html>

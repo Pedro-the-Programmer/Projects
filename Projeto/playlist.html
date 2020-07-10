@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Playlist</title>
+		<meta name="viewports" CONTENT="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="_css/estilos.css"/>
+		<style>
+			h6.back {
+				position: absolute;
+				right: 5vw;
+				font-family: 'Vollkorn', Arial;
+				padding-bottom: 0px;
+				
+			}
+			body {
+				height: 100vh;
+				width: 100vw;
+				overflow: hidden;
+				position: fixed;
+				margin: 0;
+			}
+			table#contexterno {
+				position: absolute;
+				display: block;
+				margin: 0;
+				border-right: 10px solid green;
+				border-bottom: 10px solid green;
+				overflow-y:auto;
+				height: 100vh;
+				width: 25vw;
+				box-shadow: 1px 1px 4px black;
+			}
+			table#contexterno td {
+				position: relative;
+				text-align: left;
+				font-size: 11pt;
+				height: 9vh;
+				width: 100%;
+				background-color: rgb(0,150,0);
+			}
+			table#contexterno caption h2{
+				font-size: 36pt;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<script type="text/javascript" src="_javascript/funcoes.js"></script>
+	</head>
+	<body onload="listaVideo(0)">
+		<aside id="navegador">
+			<table id="contexterno">
+				<caption><h2>Curso de Algoritmo</h2><h3>Por Gustavo Guanabara</h3></caption>
+				<tr><td id="a0" onclick="listaVideo(0)">Aula 1 - Introdução a Algoritmos </td></tr>
+				<tr><td id="a1" onclick="listaVideo(1)">Aula 2 - Primeiro Algoritmo</td></tr>
+				<tr><td id="a2" onclick="listaVideo(2)">Aula 3 - Comandos de Entrada e Operadores</td></tr>
+				<tr><td id="a3" onclick="listaVideo(3)">Aula 4 - Operadores Lógicos e Relacionais</td></tr>
+				<tr><td id="a4" onclick="listaVideo(4)">Aula 5 - Introdução ao Scratch</td></tr>
+				<tr><td id="a5" onclick="listaVideo(5)">Aula 6 - Exercícios de Algoritmo Resolvidos</td></tr>
+				<tr><td id="a6" onclick="listaVideo(6)">Aula 7 - Estruturas Condicionais 1</td></tr>
+				<tr><td id="a7" onclick="listaVideo(7)">Aula 8 - Estruturas Condicionais 2</td></tr>
+				<tr><td id="a8" onclick="listaVideo(8)">Aula 9 - Estruturas de Repetição 1</td></tr>
+				<tr><td id="a9" onclick="listaVideo(9)">Aula 10 - Estruturas de Repetição 2</td></tr>
+				<tr><td id="a10" onclick="listaVideo(10)">Aula 11 - Estruturas de Repetição 3</td></tr>
+				<tr><td id="a11" onclick="listaVideo(11)">Aula 12 - Procedimentos</td></tr>
+				<tr><td id="a12" onclick="listaVideo(12)">Aula 13 - Funções</td></tr>
+				<tr><td id="a13" onclick="listaVideo(13)">Aula 14 - Vetores</td></tr>
+				<tr><td id="a14" onclick="listaVideo(14)">Aula 15 - Matrizes</td></tr>
+			</table>
+		</aside>
+		<section id="conteudo">
+			<h6 class="back" onclick="redirec('index.html')">Voltar</h6>
+			<iframe id="player" src="https://www.youtube.com/embed/8mei6uVttho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onload="verificaPont()"></iframe>
+			<h6 id="anterior" onclick="acessaVideos('ant')")>Aula Anterior</h6>
+			<h6 id="proximo" onclick="acessaVideos('pro')">Próxima Aula</h6>
+		</section>
+	</body>
+</html>

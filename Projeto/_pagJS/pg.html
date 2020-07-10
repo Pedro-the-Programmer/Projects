@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Gerador de PG</title>
+		<link rel="stylesheet" type="text/css" href="../_css/operacoes.css"/>
+		<script type="text/javascript" src="../_javascript/funcoes.js"></script>
+		<style>
+			body {
+				background-color: rgba(150,100,0,0.6);
+			}
+		</style>
+	</head>
+	<body>
+		<h6 class="back" onclick="redirec('../geradores.html')">Voltar</h6>
+		
+		<h1>Gerador de PG</h1>
+		<table class="tabela-center">
+			<tr><td><label for="ntermos">Número de Termos:</label></td><td><input type="number" id="ntermos" min="0"></input></td></tr>
+			<tr><td><label for="razao">Razão:</label></td><td><input type="number" id="razao"></input></td></tr>
+			<tr><td><label for="ptermo">Primeiro Termo:</label></td><td><input type="number" id="ptermo"></input></td></tr>
+		</table>
+		
+				
+		<button onclick="geraPG()">Gerar PG</button>
+	
+		<h3 id="result"></h3>
+		
+		<audio id="som" src="../_audio/sound.mp3"/>
+		
+		<script>
+			document.getElementById("ptermo").value = "0";
+			document.getElementById("razao").value = "0";
+			document.getElementById("ntermos").value = "0";
+		</script>
+	</body>
+</html>

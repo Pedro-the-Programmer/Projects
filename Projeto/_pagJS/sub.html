@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8"/>
+		<title>Subtração</title>
+		<link rel="stylesheet" href="../_css/operacoes.css"/>
+		<style>
+			body {
+			    background-color: rgba(100,100,0,0.5);
+			}
+		</style>
+		<script type="text/javascript" src="../_javascript/funcoes.js"></script>
+	</head>
+	<body>
+	
+		<audio id="som">
+			<source src="../_audio/sound.mp3" type="audio/mp3">
+		</audio>
+	
+		<h6 class="back" onclick="redirec('../operacoes.html')">Voltar</h6>
+		
+		<h1>Subtração</h1>
+		<table class="tabela-center">
+			<tr><td><label for="n1">Primeiro número:</label></td> <td><input type="number" id="n1" size="15" placeholder="1° Valor"/></td></tr>
+			<tr><td><label for="n2">Segundo número:</label></td> <td><input type="number" id="n2" size="15" maxlength="10" placeholder="2° Valor"/></td></tr>
+		</table>
+		<button onclick="sub()"><b>Calcular</b></button><br/><br/>
+		<h3 id="result"></h3>
+		
+		<script>
+			document.getElementById("n1").value = "";
+			document.getElementById("n2").value = "";
+		</script>
+    </body>
+</html>
